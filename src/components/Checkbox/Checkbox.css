@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     margin: 24px;
-    font-size: 16px;
 }
 
 .checkbox__box {
@@ -23,3 +22,6 @@
     text-decoration: line-through;
 }
 
+.checkbox__text {
+    font-size: 16px;
+}
