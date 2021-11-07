@@ -1,0 +1,22 @@
+.checkbox {
+    width: 100vw;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 24px;
+}
+
+.checkbox__box {
+    border-radius: 10px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.checkbox__box--checked {
+    background-color: #FB76A1;
+}
+
+.checkbox__box--unchecked {
+    border: 2px solid #FB76A1;
+}
