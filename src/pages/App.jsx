@@ -1,7 +1,10 @@
-import Checkbox from "../components/Checkbox";
+import Task from "../components/Task";
 
 function App(props) {
-  return <Checkbox checked={false}>Lorem ipsum dolor sit amet.</Checkbox>
+  return <div>
+    <Task checked={false} date="Monday"> Do the math for next monday.</Task>
+    <Task checked={true} date="Tuesday"> Do the math for next monday.</Task>
+  </div>
 }
 
 export default App;
