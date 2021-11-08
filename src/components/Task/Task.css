@@ -8,9 +8,10 @@
     border-radius: 24px;
     margin-top: 24px;
     padding: 24px;
+    width: 700px;
 }
 
 .task__date {
-    margin-left: 36px;
+    margin-left: 44px;
     color: #3A9593;
 }
