@@ -1,5 +1,4 @@
 import Task from "../components/Task";
-import Icon from "../components/Icon";
 import Button from "../components/Button/";
 
 const App = (props) => {
@@ -8,7 +7,6 @@ const App = (props) => {
     <Task checked={true} date="Tuesday"> Do the math for next monday.</Task>
     <Button iconName="plus" variant="special"/>
   </div>
-    
 }
 
 export default App;
