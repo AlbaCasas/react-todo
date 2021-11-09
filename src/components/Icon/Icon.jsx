@@ -1,11 +1,16 @@
+import { ReactComponent as LeftSVG } from "../../assets/Left.svg";
+import { ReactComponent as PlusSVG } from "../../assets/Plus.svg";
+
 import "./Icon.css";
 
-const Icon = (iconName) => {
-    return (
-        <svg viewBox="0 0 24 24">
-            <path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-        </svg>
-    );
+const Icon = (props) => {
+    if ( props.iconName === "plus" ) {
+        return <PlusSVG/>;
+    } else if ( props.iconName === "left" ) {
+        return <LeftSVG/>;
+    } else {
+        return null;
+    }
 }
 
 export default Icon;
