@@ -1,5 +1,6 @@
 import Task from "../components/Task";
 import Icon from "../components/Icon";
+import Button from "../components/Button/";
 
 const App = (props) => {
   return <div>
@@ -8,6 +9,7 @@ const App = (props) => {
     <div>
         <Icon iconName="left"/>
     </div>
+    <Button iconName="plus" variant="special"/>
   </div>
     
 }
