@@ -8,5 +8,5 @@ export const getClassName = (variant) => {
     if (variant === "primary") {
         return "button--primary";
     }
-    return ""
+    return "";
 }
