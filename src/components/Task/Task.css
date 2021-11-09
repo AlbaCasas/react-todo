@@ -3,12 +3,13 @@
     flex-direction: column;
     justify-content: center;
     background-color: #21212B;
-    border-radius: 24px;
-    padding: 24px;
+    border-radius: 20px;
+    padding: 16px;
     width: 700px;
 }
 
 .task__date {
-    margin-left: 44px;
+    margin-left: 32px;
+    margin-top: 4px;
     color: #3A9593;
 }
