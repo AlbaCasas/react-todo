@@ -1,22 +1,22 @@
 .checkbox {
-    width: 100vw;
-    height: 24px;
-    display: flex;
-    align-items: center;
+  width: 100vw;
+  height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox__box {
-    border-radius: 10px;
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    border: 2px solid #FB76A1;
+  border-radius: 10px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border: 2px solid #fb76a1;
 }
 
 .checkbox__box--checked {
-    background-color: #FB76A1;
+  background-color: #fb76a1;
 }
 
 .checkbox__text--checked {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
