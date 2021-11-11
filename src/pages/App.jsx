@@ -1,11 +1,11 @@
 import Task from "../components/Task";
-import Button from "../components/Button/";
+import Input from "../components/Input/";
+import "./App.css";
 
 const App = (props) => {
-  return <div>
+  return <div className="app">
     <Task checked={false} date="Monday"> Do the math for next monday.</Task>
-    <Task checked={true} date="Tuesday"> Do the math for next monday.</Task>
-    <Button iconName="plus" variant="special"/>
+    <Input placeholder="Add a task"/>
   </div>
 }
 

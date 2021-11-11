@@ -20,7 +20,3 @@
 .checkbox__text--checked {
     text-decoration: line-through;
 }
-
-.checkbox__text {
-    font-size: 16px;
-}

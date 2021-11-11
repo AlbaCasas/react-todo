@@ -5,9 +5,9 @@ import "./Icon.css";
 
 const Icon = (props) => {
     if ( props.iconName === "plus" ) {
-        return <PlusSVG/>;
+        return <PlusSVG className={props.className}/>;
     } else if ( props.iconName === "left" ) {
-        return <LeftSVG/>;
+        return <LeftSVG className={props.className}/>;
     } else {
         return null;
     }
