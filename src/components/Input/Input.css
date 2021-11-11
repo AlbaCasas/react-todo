@@ -1,23 +1,23 @@
 .input__field {
-    display: flex;
-    background-color: transparent;
-    border: 2px solid #21212B;
-    width: 700px;
-    padding: 8px;
-    border-radius: 20px;
-    height: 48px;
-    color: white;
-    padding-left: 48px;
-    outline: none;
+  display: flex;
+  background-color: transparent;
+  border: 2px solid #21212b;
+  width: 700px;
+  padding: 8px;
+  border-radius: 20px;
+  height: 48px;
+  color: white;
+  padding-left: 48px;
+  outline: none;
 }
 
 .input__button {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .input {
-    position: relative;
+  position: relative;
 }
