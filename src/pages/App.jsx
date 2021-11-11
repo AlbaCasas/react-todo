@@ -19,6 +19,7 @@ const tasks = [
     text: "Read english book chapter 5",
   },
 ];
+
 const App = (props) => {
   return (
     <div className="app">
