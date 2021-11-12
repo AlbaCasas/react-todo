@@ -5,7 +5,6 @@ import "./Button.css";
 const Button = (props) => {
   return (
     <button
-      onClick={props.onClick}
       className={`button ${getClassName(props.variant)} ${props.className}`}
     >
       <Icon iconName={props.iconName} className="button__icon" />
