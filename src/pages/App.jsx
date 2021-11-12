@@ -7,17 +7,22 @@ const INPUT_NAME = "task";
 
 const App = (props) => {
   const [tasks, setTasks] = useState([]);
+
   const handleTaskSubmit = (event) => {
     event.preventDefault();
-    setTasks([
-      ...tasks,
-      {
-        date: null,
-        checked: false,
-        text: event.target[INPUT_NAME].value,
-      },
-    ]);
+    const inputValue = event.target[INPUT_NAME].value;
+    if (inputValue !== "") {
+      setTasks([
+        ...tasks,
+        {
+          date: null,
+          checked: false,
+          text: inputValue,
+        },
+      ]);
+    }
   };
+
   return (
     <div className="app">
       <Input
