@@ -7,6 +7,7 @@ const App = (props) => {
   const [tasks, setTasks] = useState([]);
   const handleTaskSubmit = () =>
     setTasks([
+      ...tasks,
       {
         date: null,
         checked: false,
