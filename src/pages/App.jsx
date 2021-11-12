@@ -5,20 +5,17 @@ import "./App.css";
 
 const App = (props) => {
   const [tasks, setTasks] = useState([]);
+  const handleTaskSubmit = () =>
+    setTasks([
+      {
+        date: null,
+        checked: false,
+        text: "Hello World",
+      },
+    ]);
   return (
     <div className="app">
-      <Input
-        placeholder="Add a task"
-        onClick={() =>
-          setTasks([
-            {
-              date: null,
-              checked: false,
-              text: "Hello World",
-            },
-          ])
-        }
-      />
+      <Input placeholder="Add a task" onClick={handleTaskSubmit} />
       {tasks.map((task) => {
         return (
           <Task date={task.date} checked={task.checked}>
