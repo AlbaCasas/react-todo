@@ -21,3 +21,12 @@
 .input {
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .input__field {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+}
