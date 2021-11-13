@@ -3,20 +3,33 @@ import Task from "../components/Task";
 import Input from "../components/Input/";
 import "./App.css";
 
+const INPUT_NAME = "task";
+
 const App = (props) => {
   const [tasks, setTasks] = useState([]);
-  const handleTaskSubmit = () =>
-    setTasks([
-      ...tasks,
-      {
-        date: null,
-        checked: false,
-        text: "Hello World",
-      },
-    ]);
+
+  const handleTaskSubmit = (event) => {
+    event.preventDefault();
+    const inputValue = event.target[INPUT_NAME].value;
+    if (inputValue !== "") {
+      setTasks([
+        ...tasks,
+        {
+          date: null,
+          checked: false,
+          text: inputValue,
+        },
+      ]);
+    }
+  };
+
   return (
     <div className="app">
-      <Input placeholder="Add a task" onClick={handleTaskSubmit} />
+      <Input
+        name={INPUT_NAME}
+        placeholder="Add a task"
+        onSubmit={handleTaskSubmit}
+      />
       {tasks.map((task) => {
         return (
           <Task date={task.date} checked={task.checked}>

@@ -3,15 +3,19 @@ import "./Input.css";
 
 const Input = (props) => {
   return (
-    <div className="input">
+    <form onSubmit={props.onSubmit} className="input">
       <Button
-        onClick={props.onClick}
+        type="submit"
         iconName="plus"
         variant="primary"
         className="input__button"
       />
-      <input className="input__field" placeholder={props.placeholder} />
-    </div>
+      <input
+        name={props.name}
+        className="input__field"
+        placeholder={props.placeholder}
+      />
+    </form>
   );
 };
 
