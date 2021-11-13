@@ -26,13 +26,14 @@ const App = (props) => {
   return (
     <div className="app">
       <Input
+        className="app__input"
         name={INPUT_NAME}
         placeholder="Add a task"
         onSubmit={handleTaskSubmit}
       />
       {tasks.map((task) => {
         return (
-          <Task date={task.date} checked={task.checked}>
+          <Task className="app__task" date={task.date} checked={task.checked}>
             {task.text}
           </Task>
         );

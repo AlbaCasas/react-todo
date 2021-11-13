@@ -3,7 +3,7 @@ import "./Input.css";
 
 const Input = (props) => {
   return (
-    <form onSubmit={props.onSubmit} className="input">
+    <form onSubmit={props.onSubmit} className={`input ${props.className}`}>
       <Button
         type="submit"
         iconName="plus"
