@@ -29,7 +29,7 @@ const App = (props) => {
       if (task.id === taskId) {
         const checkedTask = {
           ...task,
-          checked: true,
+          checked: !task.checked,
         };
         return checkedTask;
       }
