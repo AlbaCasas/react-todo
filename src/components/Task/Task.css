@@ -6,6 +6,7 @@
   border-radius: 20px;
   padding: 16px;
   width: 700px;
+  cursor: pointer;
 }
 
 .task__date {
