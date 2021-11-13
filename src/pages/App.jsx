@@ -18,9 +18,25 @@ const App = (props) => {
           date: null,
           checked: false,
           text: inputValue,
+          id: Math.random() * 10,
         },
       ]);
     }
+  };
+
+  const handleTaskClick = (taskId) => {
+    const newTaskList = tasks.map((task) => {
+      if (task.id === taskId) {
+        const checkedTask = {
+          ...task,
+          checked: !task.checked,
+        };
+        return checkedTask;
+      }
+      return task;
+    });
+
+    setTasks(newTaskList);
   };
 
   return (
@@ -33,7 +49,13 @@ const App = (props) => {
       />
       {tasks.map((task) => {
         return (
-          <Task className="app__task" date={task.date} checked={task.checked}>
+          <Task
+            id={task.id}
+            className="app__task"
+            date={task.date}
+            checked={task.checked}
+            onClick={handleTaskClick}
+          >
             {task.text}
           </Task>
         );
