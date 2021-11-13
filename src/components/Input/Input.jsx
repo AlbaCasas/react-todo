@@ -4,7 +4,12 @@ import "./Input.css";
 const Input = (props) => {
   return (
     <form onSubmit={props.onSubmit} className="input">
-      <Button iconName="plus" variant="primary" className="input__button" />
+      <Button
+        type="submit"
+        iconName="plus"
+        variant="primary"
+        className="input__button"
+      />
       <input
         name={props.name}
         className="input__field"
