@@ -1,8 +1,13 @@
+.input {
+  position: relative;
+  width: 700px;
+}
+
 .input__field {
   display: flex;
   background-color: transparent;
   border: 2px solid #21212b;
-  width: 700px;
+  width: 100%;
   padding: 8px;
   border-radius: 20px;
   height: 48px;
@@ -18,6 +23,8 @@
   transform: translateY(-50%);
 }
 
-.input {
-  position: relative;
+@media (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
 }

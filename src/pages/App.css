@@ -12,3 +12,14 @@
 .app__task {
   margin-bottom: 16px;
 }
+
+@media (max-width: 768px) {
+  .app {
+    padding: 24px;
+    padding-top: 48px;
+  }
+
+  .app__task {
+    margin-bottom: 12px;
+  }
+}
