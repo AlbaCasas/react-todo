@@ -41,25 +41,28 @@ const App = (props) => {
 
   return (
     <div className="app">
-      <Input
-        className="app__input"
-        name={INPUT_NAME}
-        placeholder="Add a task"
-        onSubmit={handleTaskSubmit}
-      />
-      {tasks.map((task) => {
-        return (
-          <Task
-            id={task.id}
-            className="app__task"
-            date={task.date}
-            checked={task.checked}
-            onClick={handleTaskClick}
-          >
-            {task.text}
-          </Task>
-        );
-      })}
+      <div className="app__body">
+        <Input
+          className="app__input"
+          name={INPUT_NAME}
+          placeholder="Add a task"
+          onSubmit={handleTaskSubmit}
+        />
+        <p className="app__tasks-counter">Tasks - {tasks.length}</p>
+        {tasks.map((task) => {
+          return (
+            <Task
+              id={task.id}
+              className="app__task"
+              date={task.date}
+              checked={task.checked}
+              onClick={handleTaskClick}
+            >
+              {task.text}
+            </Task>
+          );
+        })}
+      </div>
     </div>
   );
 };
