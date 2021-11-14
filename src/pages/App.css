@@ -5,12 +5,21 @@
   align-items: center;
 }
 
+.app__body {
+  width: 700px;
+}
+
 .app__input {
   margin-bottom: 32px;
 }
 
 .app__task {
   margin-bottom: 16px;
+}
+
+.app__tasks-counter {
+  margin-left: 8px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 768px) {
