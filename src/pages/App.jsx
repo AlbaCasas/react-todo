@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Task from "../components/Task";
 import Input from "../components/Input/";
+import Toast from "../components/Toast";
 import "./App.css";
 
 const INPUT_NAME = "task";
@@ -62,6 +63,7 @@ const App = (props) => {
             </Task>
           );
         })}
+        <Toast iconName="check">The task has been successfully created</Toast>
       </div>
     </div>
   );
