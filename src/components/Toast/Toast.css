@@ -9,6 +9,7 @@
   min-width: 300px;
   height: 56px;
   border-radius: 5px;
+  padding-right: 80px;
 }
 
 .toast__icon {
@@ -25,7 +26,6 @@
 
 .toast__text {
   margin: 8px;
-  padding-right: 80px;
 }
 
 @media (max-width: 768px) {
