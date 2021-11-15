@@ -63,7 +63,7 @@ const App = (props) => {
             </Task>
           );
         })}
-        <Toast iconName="check">Holis</Toast>
+        <Toast>Holis</Toast>
       </div>
     </div>
   );
