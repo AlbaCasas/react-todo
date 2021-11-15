@@ -7,7 +7,11 @@ const Toast = (props) => {
     <div className="toast">
       <Icon className="toast__icon" iconName="check" />
       <span className="toast__text">{props.children}</span>
-      <Button iconName="close" className="toast__button" />
+      <Button
+        iconName="close"
+        className="toast__button"
+        onClick={props.onCloseClick}
+      />
     </div>
   );
 };

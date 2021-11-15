@@ -8,6 +8,7 @@ const INPUT_NAME = "task";
 
 const App = (props) => {
   const [tasks, setTasks] = useState([]);
+  const [isToastVisible, setIsToastVisible] = useState(false);
 
   const handleTaskSubmit = (event) => {
     event.preventDefault();
@@ -22,6 +23,7 @@ const App = (props) => {
           id: Math.random() * 10,
         },
       ]);
+      setIsToastVisible(true);
     }
   };
 
@@ -63,8 +65,16 @@ const App = (props) => {
             </Task>
           );
         })}
-        <Toast>The task has been successfully created</Toast>
       </div>
+      {isToastVisible === true && (
+        <Toast
+          onCloseClick={() => {
+            setIsToastVisible(false);
+          }}
+        >
+          The task has been successfully created
+        </Toast>
+      )}
     </div>
   );
 };
