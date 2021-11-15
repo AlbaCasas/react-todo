@@ -63,7 +63,7 @@ const App = (props) => {
             </Task>
           );
         })}
-        <Toast>Holis</Toast>
+        <Toast>The task has been successfully created</Toast>
       </div>
     </div>
   );
