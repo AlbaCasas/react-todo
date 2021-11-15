@@ -63,7 +63,7 @@ const App = (props) => {
             </Task>
           );
         })}
-        <Toast iconName="check">The task has been successfully created</Toast>
+        <Toast iconName="check">Holis</Toast>
       </div>
     </div>
   );
