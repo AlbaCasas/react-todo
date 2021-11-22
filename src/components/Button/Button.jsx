@@ -7,6 +7,7 @@ const Button = (props) => {
     <button
       type={props.type}
       className={`button ${getClassName(props.variant)} ${props.className}`}
+      onClick={props.onClick}
     >
       <Icon iconName={props.iconName} className="button__icon" />
     </button>
